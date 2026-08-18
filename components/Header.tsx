@@ -69,7 +69,7 @@ export function Header() {
             href={APPLY_URL}
             className="inline-flex items-center justify-center rounded-btn bg-ocean px-5 h-12 text-sm font-medium text-ivory"
           >
-            Founding Cohort 신청
+            첫 기수 신청하기
           </a>
         </nav>
       )}

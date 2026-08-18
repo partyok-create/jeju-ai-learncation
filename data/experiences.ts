@@ -1,33 +1,38 @@
 export type ExperienceCategory = {
   id: string;
   title: string;
-  titleKo: string;
+  headline: string;
   items: string[];
+  tone: "sea" | "deep" | "sand" | "moss";
 };
 
 export const experiences: ExperienceCategory[] = [
   {
     id: "walk",
     title: "WALK",
-    titleKo: "걷다",
+    headline: "걸으면 생각이 정리됩니다.",
     items: ["올레길", "곶자왈", "오름"],
+    tone: "moss",
   },
   {
     id: "ocean",
     title: "OCEAN",
-    titleKo: "바다",
+    headline: "때로는 노트북에서 멀어져야 새로운 생각이 시작됩니다.",
     items: ["카약", "SUP", "스노클링", "서핑", "요트"],
+    tone: "sea",
   },
   {
     id: "local",
     title: "LOCAL",
-    titleKo: "마을",
-    items: ["해녀문화 체험", "제주 마을", "포구", "시장", "농장", "로컬 음식"],
+    headline: "사람을 만나면 이야기가 생깁니다.",
+    items: ["해녀문화", "제주 마을", "포구", "시장", "농장", "로컬 음식"],
+    tone: "sand",
   },
   {
     id: "slow",
     title: "SLOW",
-    titleKo: "쉼",
+    headline: "아무것도 하지 않는 시간도 프로그램의 일부입니다.",
     items: ["바다 산책", "카페", "독서", "노을", "대화"],
+    tone: "deep",
   },
 ];

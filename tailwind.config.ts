@@ -11,11 +11,12 @@ const config: Config = {
     },
     extend: {
       colors: {
-        ivory: "#F6F1E8",
-        charcoal: "#222222",
-        ocean: "#3F6F78",
-        basalt: "#6B6965",
-        olive: "#7C876A",
+        ivory: "#F4F0E8",
+        paper: "#FBFAF6",
+        charcoal: "#252521",
+        ocean: "#315D62",
+        basalt: "#575754",
+        moss: "#727B65",
         sand: "#D9CBB8",
       },
       fontFamily: {
@@ -23,19 +24,25 @@ const config: Config = {
         sans: ["var(--font-sans)", "sans-serif"],
       },
       fontSize: {
-        h1: ["42px", { lineHeight: "1.1", letterSpacing: "-0.01em" }],
-        "h1-lg": ["84px", { lineHeight: "1.05", letterSpacing: "-0.01em" }],
-        h2: ["32px", { lineHeight: "1.15" }],
-        "h2-lg": ["56px", { lineHeight: "1.1" }],
+        h1: ["44px", { lineHeight: "1.08", letterSpacing: "-0.01em" }],
+        "h1-lg": ["92px", { lineHeight: "1.02", letterSpacing: "-0.015em" }],
+        h2: ["34px", { lineHeight: "1.12" }],
+        "h2-lg": ["60px", { lineHeight: "1.08" }],
         h3: ["24px", { lineHeight: "1.25" }],
         "h3-lg": ["33px", { lineHeight: "1.25" }],
+        body: ["17px", { lineHeight: "1.7" }],
+        "body-lg": ["18px", { lineHeight: "1.75" }],
       },
       borderRadius: {
         card: "16px",
         btn: "12px",
       },
       maxWidth: {
-        content: "1200px",
+        content: "1240px",
+      },
+      spacing: {
+        section: "72px",
+        "section-lg": "140px",
       },
       transitionTimingFunction: {
         editorial: "cubic-bezier(0.22, 1, 0.36, 1)",

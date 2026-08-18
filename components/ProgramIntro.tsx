@@ -1,9 +1,10 @@
 import { Reveal } from "./ui/Reveal";
 import { Container } from "./ui/Container";
+import { Section } from "./ui/Section";
 
 export function ProgramIntro() {
   return (
-    <section id="program" className="bg-ivory py-24 md:py-36">
+    <Section id="program" className="bg-ivory">
       <Container>
         <Reveal>
           <p className="balance mx-auto max-w-3xl text-center font-serif text-h2 md:text-h2-lg text-charcoal">
@@ -13,7 +14,7 @@ export function ProgramIntro() {
           </p>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mx-auto mt-8 max-w-xl text-center text-base md:text-lg leading-relaxed text-basalt">
+          <p className="mx-auto mt-9 max-w-xl text-center text-body md:text-body-lg leading-relaxed text-basalt">
             일상에서 잠시 떨어져
             <br />
             생각하고, 걷고, 배우고, 만들기 위해 제주에 옵니다.
@@ -25,6 +26,6 @@ export function ProgramIntro() {
           </p>
         </Reveal>
       </Container>
-    </section>
+    </Section>
   );
 }

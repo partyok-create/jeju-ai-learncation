@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { faq } from "@/data/faq";
 import { Container } from "./ui/Container";
+import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bg-ivory py-24 md:py-36">
+    <Section id="faq" className="bg-ivory">
       <Container className="max-w-3xl">
         <Reveal>
           <h2 className="text-center font-serif text-h2 md:text-h2-lg text-charcoal">FAQ</h2>
@@ -49,6 +50,6 @@ export function FAQ() {
           })}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

@@ -1,4 +1,5 @@
 import { Container } from "./ui/Container";
+import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
 const included = [
@@ -17,7 +18,7 @@ const optional = ["추가 숙박", "1:1 멘토링", "프로필 사진", "공항 
 
 export function Included() {
   return (
-    <section className="bg-sand/40 py-24 md:py-36">
+    <Section className="bg-sand/40">
       <Container>
         <Reveal>
           <h2 className="text-center font-serif text-h2 md:text-h2-lg text-charcoal">
@@ -55,6 +56,6 @@ export function Included() {
           </Reveal>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

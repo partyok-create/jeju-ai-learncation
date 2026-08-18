@@ -1,4 +1,5 @@
 import { Container } from "./ui/Container";
+import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
 const audience = [
@@ -14,7 +15,7 @@ const audience = [
 
 export function Audience() {
   return (
-    <section className="bg-ivory py-24 md:py-36">
+    <Section className="bg-ivory">
       <Container>
         <Reveal>
           <h2 className="text-center font-serif text-h2 md:text-h2-lg text-charcoal">
@@ -39,6 +40,6 @@ export function Audience() {
           </p>
         </Reveal>
       </Container>
-    </section>
+    </Section>
   );
 }

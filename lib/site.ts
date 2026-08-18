@@ -1,4 +1,5 @@
-export const APPLY_URL = "https://example.com/apply";
+export const APPLY_URL =
+  process.env.NEXT_PUBLIC_APPLY_URL ?? "https://example.com/apply";
 
 export const NAV_LINKS = [
   { label: "Program", href: "#program" },
