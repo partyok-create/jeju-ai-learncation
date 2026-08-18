@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ProgramIntro } from "@/components/ProgramIntro";
 import { ProjectSelector } from "@/components/ProjectSelector";
 import { JejuClassroom } from "@/components/JejuClassroom";
+import { PlaceToBuild } from "@/components/PlaceToBuild";
 import { ExperienceGrid } from "@/components/ExperienceGrid";
 import { ExperienceToContent } from "@/components/ExperienceToContent";
 import { Journey } from "@/components/Journey";
@@ -21,8 +22,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ProgramIntro />
-      <ProjectSelector />
       <JejuClassroom />
+      <ProjectSelector />
+      <PlaceToBuild />
       <ExperienceGrid />
       <ExperienceToContent />
       <Journey />

@@ -20,7 +20,7 @@ export function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(37,37,33,0.15) 0%, rgba(37,37,33,0.05) 30%, rgba(37,37,33,0.55) 75%, rgba(37,37,33,0.85) 100%)",
+            "linear-gradient(180deg, rgba(37,37,33,0.05) 0%, rgba(37,37,33,0) 25%, rgba(37,37,33,0.35) 72%, rgba(37,37,33,0.62) 100%)",
         }}
       />
 
@@ -59,7 +59,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="mt-3 text-sm md:text-base text-paper/70"
         >
-          4박5일 · 단 5–6명 · 제주 체류형 AI 프로젝트
+          4박5일 · 5~6명 · 제주 체류형 프로젝트
         </motion.p>
 
         <motion.div
@@ -69,13 +69,13 @@ export function Hero() {
           className="mt-11 flex flex-wrap items-center gap-6"
         >
           <Button href={APPLY_URL} variant="primary">
-            첫 기수 신청하기
+            첫 기수 신청하기 →
           </Button>
           <a
             href="#program"
             className="text-sm md:text-base text-paper/85 underline underline-offset-4 hover:text-paper transition-colors"
           >
-            프로그램 살펴보기
+            프로그램 살펴보기 ↓
           </a>
         </motion.div>
       </div>

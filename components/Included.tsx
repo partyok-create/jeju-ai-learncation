@@ -3,7 +3,6 @@ import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
 const included = [
-  "4박 숙박",
   "AI Workshop",
   "Vibe Coding",
   "Project Mentoring",
@@ -14,7 +13,7 @@ const included = [
   "Final Showcase",
 ];
 
-const optional = ["추가 숙박", "1:1 멘토링", "프로필 사진", "공항 이동", "추가 체험"];
+const optional = ["숙소 안내", "1:1 멘토링", "프로필 사진", "공항 이동", "추가 체험"];
 
 export function Included() {
   return (

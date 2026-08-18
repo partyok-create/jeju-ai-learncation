@@ -2,43 +2,55 @@ import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 
-const flow = ["Experience", "Photo / Voice Memo", "AI", "Story", "Blog / Reel / Book / Brand"];
+const flow = ["Walk", "Photo", "Voice Memo", "AI", "Blog / Reel / Story / Brand"];
 
 export function ExperienceToContent() {
   return (
     <Section className="bg-sand/40">
       <Container>
-        <Reveal>
-          <h2 className="balance text-center font-serif text-h2 md:text-h2-lg text-charcoal">
-            경험은 여행에서 끝나지 않습니다.
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="mx-auto mt-6 max-w-lg text-center text-body md:text-body-lg text-basalt">
-            제주에서 찍고, 듣고, 기록한 모든 것이
-            <br />
-            AI를 통해 당신의 새로운 콘텐츠와 브랜드가 됩니다.
-          </p>
-        </Reveal>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20 md:items-center">
+          <Reveal>
+            <div
+              className="aspect-[4/3] rounded-[4px]"
+              style={{
+                background: "linear-gradient(155deg, #EADFCB 0%, #D9CBB8 55%, #A98F6F 100%)",
+              }}
+            />
+          </Reveal>
 
-        <Reveal delay={0.2}>
-          <div className="mt-16 flex flex-col items-center gap-3 md:flex-row md:justify-center md:gap-4">
-            {flow.map((step, i) => (
-              <div key={step} className="flex flex-col items-center gap-3 md:flex-row md:gap-4">
-                <span
-                  className={`rounded-full border border-charcoal/15 bg-paper px-5 py-2.5 text-sm md:text-base ${
-                    i === flow.length - 1 ? "text-ocean font-medium" : "text-charcoal/80"
-                  }`}
-                >
-                  {step}
-                </span>
-                {i < flow.length - 1 && (
-                  <span className="text-charcoal/30 md:-rotate-90">↓</span>
-                )}
-              </div>
-            ))}
+          <div>
+            <Reveal>
+              <h2 className="balance font-serif text-h2 md:text-h2-lg text-charcoal">
+                경험은 기록이 되고,
+                <br />
+                기록은 콘텐츠가 됩니다.
+              </h2>
+            </Reveal>
+
+            <Reveal delay={0.1}>
+              <ul className="mt-10 space-y-3">
+                {flow.map((step, i) => (
+                  <li
+                    key={step}
+                    className={`font-serif text-2xl md:text-3xl ${
+                      i === flow.length - 1 ? "text-ocean" : "text-charcoal/50"
+                    }`}
+                  >
+                    {step}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <p className="mt-10 max-w-md text-body md:text-body-lg leading-relaxed text-basalt">
+                제주에서 경험한 모든 것이
+                <br />
+                당신의 새로운 콘텐츠와 브랜드의 재료가 됩니다.
+              </p>
+            </Reveal>
           </div>
-        </Reveal>
+        </div>
       </Container>
     </Section>
   );
