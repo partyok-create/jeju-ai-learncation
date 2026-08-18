@@ -1,24 +1,26 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 import { APPLY_URL } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section
-      id="top"
-      className="relative flex min-h-[100svh] items-end overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, #E3E3D7 0%, #B7CBC7 30%, #6C959A 58%, #315D62 84%, #1F3F43 100%)",
-      }}
-    >
+    <section id="top" className="relative flex min-h-[100svh] items-end overflow-hidden">
+      <Image
+        src="/images/hero/sunset-field.jpg"
+        alt="제주 노을과 보리밭"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
       <div
-        className="absolute inset-0 opacity-35"
+        className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 45% at 50% 0%, rgba(251,250,246,0.5) 0%, rgba(251,250,246,0) 70%)",
+            "linear-gradient(180deg, rgba(37,37,33,0.15) 0%, rgba(37,37,33,0.05) 30%, rgba(37,37,33,0.55) 75%, rgba(37,37,33,0.85) 100%)",
         }}
       />
 

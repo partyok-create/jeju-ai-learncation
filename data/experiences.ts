@@ -4,6 +4,7 @@ export type ExperienceCategory = {
   headline: string;
   items: string[];
   tone: "sea" | "deep" | "sand" | "moss";
+  image?: string;
 };
 
 export const experiences: ExperienceCategory[] = [
@@ -13,6 +14,7 @@ export const experiences: ExperienceCategory[] = [
     headline: "걸으면 생각이 정리됩니다.",
     items: ["올레길", "곶자왈", "오름"],
     tone: "moss",
+    image: "/images/experiences/walk-forest.jpg",
   },
   {
     id: "ocean",
@@ -20,6 +22,7 @@ export const experiences: ExperienceCategory[] = [
     headline: "때로는 노트북에서 멀어져야 새로운 생각이 시작됩니다.",
     items: ["카약", "SUP", "스노클링", "서핑", "요트"],
     tone: "sea",
+    image: "/images/experiences/ocean-snorkel.jpg",
   },
   {
     id: "local",

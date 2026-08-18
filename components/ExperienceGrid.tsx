@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { experiences, ExperienceCategory } from "@/data/experiences";
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
@@ -11,10 +12,10 @@ const toneGradient: Record<ExperienceCategory["tone"], string> = {
 };
 
 const toneText: Record<ExperienceCategory["tone"], string> = {
-  sea: "text-paper",
-  deep: "text-paper",
-  sand: "text-charcoal",
-  moss: "text-paper",
+  sea: "text-paper/70",
+  deep: "text-paper/70",
+  sand: "text-charcoal/70",
+  moss: "text-paper/70",
 };
 
 export function ExperienceGrid() {
@@ -38,10 +39,23 @@ export function ExperienceGrid() {
                 }`}
               >
                 <div
-                  className="flex aspect-[4/3] flex-col justify-between p-8 md:aspect-auto md:min-h-[380px] md:p-12"
-                  style={{ background: toneGradient[category.tone] }}
+                  className="relative flex aspect-[4/3] flex-col justify-between p-8 md:aspect-auto md:min-h-[420px] md:p-12"
+                  style={!category.image ? { background: toneGradient[category.tone] } : undefined}
                 >
-                  <span className={`text-xs tracking-[0.25em] ${toneText[category.tone]}/70`}>
+                  {category.image && (
+                    <>
+                      <Image
+                        src={category.image}
+                        alt={category.headline}
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="object-cover"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent" />
+                    </>
+                  )}
+                  <span className={`relative text-xs tracking-[0.25em] ${toneText[category.tone]}`}>
                     {category.title}
                   </span>
                 </div>
