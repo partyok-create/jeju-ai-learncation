@@ -34,8 +34,9 @@ export const experiences: ExperienceCategory[] = [
   {
     id: "slow",
     title: "SLOW",
-    headline: "아무것도 하지 않는 시간도 프로그램의 일부입니다.",
+    headline: "잘 만들기 위해서는 잠시 멈추는 시간도 필요합니다.",
     items: ["바다 산책", "카페", "독서", "노을", "대화"],
     tone: "deep",
+    image: "/images/experiences/slow-umbrella.jpg",
   },
 ];

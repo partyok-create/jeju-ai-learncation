@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
@@ -10,12 +11,16 @@ export function ExperienceToContent() {
       <Container>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20 md:items-center">
           <Reveal>
-            <div
-              className="aspect-[4/3] rounded-[4px]"
-              style={{
-                background: "linear-gradient(155deg, #EADFCB 0%, #D9CBB8 55%, #A98F6F 100%)",
-              }}
-            />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[4px]">
+              <Image
+                src="/images/jeju/content-capture.jpg"
+                alt="해변에서 스마트폰으로 사진을 기록하는 사람"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+                loading="lazy"
+              />
+            </div>
           </Reveal>
 
           <div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { schedule } from "@/data/schedule";
 import { Container } from "./ui/Container";
 import { Section } from "./ui/Section";
@@ -35,6 +36,23 @@ export function Journey() {
           ))}
         </div>
       </Container>
+
+      <Reveal delay={0.2}>
+        <div className="relative mt-20 aspect-[16/9] md:aspect-[21/9]">
+          <Image
+            src="/images/experiences/journey-ocean.jpg"
+            alt="제주 바다를 바라보는 참가자들의 뒷모습"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent" />
+          <p className="absolute bottom-6 left-6 text-xs tracking-[0.2em] text-paper/90 md:bottom-10 md:left-10">
+            DAY 03 · 제주로 나갑니다
+          </p>
+        </div>
+      </Reveal>
     </Section>
   );
 }

@@ -1,18 +1,22 @@
+import Image from "next/image";
 import { Reveal } from "./ui/Reveal";
 
 export function JejuClassroom() {
   return (
-    <section
-      className="relative flex min-h-[85vh] items-center overflow-hidden"
-      style={{
-        background: "linear-gradient(150deg, #9FC0C2 0%, #4D8388 55%, #2A4F53 100%)",
-      }}
-    >
+    <section className="relative flex min-h-[85vh] items-center overflow-hidden">
+      <Image
+        src="/images/jeju/classroom-surf.jpg"
+        alt="제주 해변에서 서핑을 즐기는 사람들"
+        fill
+        sizes="100vw"
+        className="object-cover"
+        loading="lazy"
+      />
       <div
-        className="absolute inset-0 opacity-40"
+        className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(65% 55% at 15% 25%, rgba(251,250,246,0.35) 0%, rgba(251,250,246,0) 60%)",
+            "linear-gradient(90deg, rgba(37,37,33,0.55) 0%, rgba(37,37,33,0.15) 45%, rgba(37,37,33,0) 70%)",
         }}
       />
       <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-10">
