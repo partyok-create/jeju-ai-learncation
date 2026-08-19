@@ -21,7 +21,9 @@ export function JejuClassroom() {
       />
       <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-10">
         <Reveal>
-          <p className="text-sm tracking-[0.25em] text-paper/80">JEJU IS ANOTHER CLASSROOM</p>
+          <p className="text-sm tracking-[0.25em] text-paper/80">
+            Jeju: A School Reimagined with AI
+          </p>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="balance mt-6 max-w-2xl font-serif text-h2 md:text-h2-lg text-paper">
