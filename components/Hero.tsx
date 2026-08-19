@@ -49,7 +49,7 @@ export function Hero() {
           className="balance font-serif text-[38px] leading-[1.1] md:text-[76px] md:leading-[1.05] text-paper max-w-3xl"
         >
           생각만 하던 일을,
-          <br className="hidden md:block" /> 제주에서 완성합니다.
+          <br /> 제주에서 완성합니다.
         </motion.h1>
 
         <motion.p
