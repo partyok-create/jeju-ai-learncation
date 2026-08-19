@@ -8,6 +8,7 @@ import { ExperienceGrid } from "@/components/ExperienceGrid";
 import { ExperienceToContent } from "@/components/ExperienceToContent";
 import { Journey } from "@/components/Journey";
 import { BeforeAfter } from "@/components/BeforeAfter";
+import { AIMentors } from "@/components/AIMentors";
 import { Audience } from "@/components/Audience";
 import { Pricing } from "@/components/Pricing";
 import { FoundingCohort } from "@/components/FoundingCohort";
@@ -29,6 +30,7 @@ export default function Home() {
       <ExperienceToContent />
       <Journey />
       <BeforeAfter />
+      <AIMentors />
       <Audience />
       <Pricing />
       <FoundingCohort />
