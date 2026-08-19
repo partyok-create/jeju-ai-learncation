@@ -30,6 +30,7 @@ export const experiences: ExperienceCategory[] = [
     headline: "사람을 만나면 이야기가 생깁니다.",
     items: ["해녀문화", "제주 마을", "포구", "시장", "농장", "로컬 음식"],
     tone: "sand",
+    image: "/images/experiences/local-market.jpg",
   },
   {
     id: "slow",
