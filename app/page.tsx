@@ -9,7 +9,7 @@ import { ExperienceToContent } from "@/components/ExperienceToContent";
 import { Journey } from "@/components/Journey";
 import { BeforeAfter } from "@/components/BeforeAfter";
 import { Audience } from "@/components/Audience";
-import { Included } from "@/components/Included";
+import { Pricing } from "@/components/Pricing";
 import { FoundingCohort } from "@/components/FoundingCohort";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -30,7 +30,7 @@ export default function Home() {
       <Journey />
       <BeforeAfter />
       <Audience />
-      <Included />
+      <Pricing />
       <FoundingCohort />
       <FAQ />
       <FinalCTA />
